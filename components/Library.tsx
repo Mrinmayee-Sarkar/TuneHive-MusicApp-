@@ -27,7 +27,7 @@ const Library: React.FC<LibraryProps> = ({ songs }) => {
     if (!user) {
       return authModal.onOpen();
     }
-    if (songs.length >= 1 && !subscription) {
+    if (songs.length >= 3 && !subscription) {
       return subscribeModal.onOpen();
     }
 
